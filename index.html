@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Nunito:ital,wght@1,200;1,400&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Данил - Портфолио</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>PORTFOLIO</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#clients">Клиенты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="text-container">
+            <div class="images-container">
+                <img src="img/mobile_file_2023-11-17_05-11-24%20(39).jpg" alt="" class="left-image">
+                <h2>Пару слов обо мне</h2>
+                <img src="https://s3.amazonaws.com/tf-nightingale/2022/12/html1.jpg" alt="" class="right-image">
+            </div>
+            <p>
+                Я занимаюсь html разработкой, написал сайты для крупных компаний, которые вы можете увидеть по перейдя к пункту "клиенты".
+                Так же являюсь разработчиком по JS (react, Mongosee, MongoDB)
+                Меня зовут Данил и я полностью готов приступить к вашим заказам!
+            </p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="portfolio-item">
+            <a href="site-visitka/index.html">
+                <img src="img/снимок2.PNG" alt="Первая фотография">
+                <p>Сайт для проекта Google</p>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="практика%20на%20макетах%20Виноградов%20Данила/index.html">
+                <img src="img/пчелки.PNG" alt="Вторая фотография">
+                <p>Сайт для компании "ООО ПЧЕЛКИ"</p>
+            </a>
+        </div>
+    </section>
+    <section id="clients">
+        <div class="client">
+            <img src="https://appstudio.org/wp-content/uploads/2011/08/timcook.png" alt="">
+            <p>Мой первый крупный клиент - Тим Кук</p>
+        </div>
+        <div class="client">
+            <img src="img/bill-gejts-removebg-preview.png" alt="Клиент 2" class="right-image2">
+            <p>Заказчик самого крупного проекта - Билл Гейтс</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <form action="обработчик_формы.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 PORTFOLIO DANIL. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
